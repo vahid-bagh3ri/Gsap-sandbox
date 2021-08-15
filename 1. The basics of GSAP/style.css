@@ -29,6 +29,11 @@ img {
     opacity: 0;
 }  */
 
+.img1 {
+  /* opacity: 1; */
+  visibility: hidden;
+}
+
 h1,
 p {
   text-align: center;
