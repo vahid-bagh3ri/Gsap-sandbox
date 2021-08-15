@@ -6,4 +6,8 @@ gsap.from(img1, {
   rotation: 90,
   ease: "bounce.out",
   duration: 2,
+  delay: 0.5,
+  repeatDelay: 0.2,
+  repeat: -1,
+  yoyo: true,
 });
