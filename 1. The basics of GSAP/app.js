@@ -1,9 +1,9 @@
 const img1 = document.querySelector(".img1");
 
-gsap.to(".btn", {
-  delay: 0.8,
-  duration: 0.4,
-  stagger: 0.2,
-  x: "random([20,50,80,-90,-50])",
-  // x: "random(-100,100,10)",
+gsap.to(img1, {
+  keyframes: [
+    {duration: 0.3, x: 100},
+    {duration: 0.3, y: 100},
+    {duration: 0.3, x: 200},
+  ],
 });
