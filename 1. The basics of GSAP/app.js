@@ -1,19 +1,7 @@
-const img1 = document.querySelector(".img1");
+const TL = gsap.timeline();
 
-const tween = gsap.to(".img2", {
-  y: 200,
-  paused: true,
-  duration: 5,
-  // paused: false,
-});
-
-// tween.kill();
-// tween.delay(1)
-// tween.duration(5);
-
-setTimeout(() => {
-  // tween.resume();
-
-  tween.seek(2.5);
-  tween.play();
-}, 2000);
+TL.from(".img1", {autoAlpha: 0, y: -50, duration: 1});
+TL.from(".img2", {autoAlpha: 0, y: -50, duration: 1});
+TL.from(".img3", {autoAlpha: 0, y: -50, duration: 1});
+TL.from("h1", {autoAlpha: 0, y: -50, duration: 1});
+TL.from("p", {autoAlpha: 0, y: -50, duration: 1});
